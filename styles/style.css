@@ -50,15 +50,17 @@
 }
 
 .address {
-  justify-self: end;
   width: 241px;
-  height: 98px;
-  margin-top: 5px;
+  padding-top: 5px;
   color: #000;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
+}
+
+.contact__header {
+  justify-self: end;
 }
 
 .address-link {
@@ -69,7 +71,7 @@
 
 .cover {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -138,6 +140,7 @@
   border: 1px solid #fff;
   padding: 12px 32px 11px 31px;
   color: #fff;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 28px;
@@ -191,49 +194,26 @@
 
 .card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 238px;
-  height: 100%;
   background-image: url("../images/card-lot-01.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 0;
-  height: 100%;
   background-image: url("../images/card-lot-02.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 90px;
-  height: 100%;
   background-image: url("../images/card-lot-03.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.ellipsis {
-  letter-spacing: 0.13em;
 }
 
 .card__title {
@@ -323,10 +303,6 @@
   line-height: 24px;
 }
 
-.one-text {
-  letter-spacing: 0.01em;
-}
-
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -335,14 +311,8 @@
   padding: 180px 50px 88px;
 }
 
-.address__footer {
+.contact__footer {
   justify-self: start;
-  margin-top: 5px;
-  color: #000;
-  font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 24.3px;
 }
 
 .footer__menu {
